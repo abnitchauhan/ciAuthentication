@@ -16,7 +16,7 @@ class SigninController extends Controller{
     public function loginAuth()
     {
         $session = session();
-
+        
         $userModel = new UserModel();
 
         $email = $this->request->getVar('email');

@@ -15,8 +15,14 @@ use CodeIgniter\Config\AutoloadConfig;
  * NOTE: If you use an identical key in $psr4 or $classmap, then
  * the values in this file will overwrite the framework's values.
  */
+
+
+$autoload['libraries'] = array('user_agent', 'database', 'session'); 
+
 class Autoload extends AutoloadConfig
 {
+
+
 	/**
 	 * -------------------------------------------------------------------
 	 * Namespaces
@@ -44,6 +50,7 @@ class Autoload extends AutoloadConfig
 		'Config'      => APPPATH . 'Config',
 	];
 
+	
 	/**
 	 * -------------------------------------------------------------------
 	 * Class Map
@@ -81,4 +88,5 @@ class Autoload extends AutoloadConfig
 	 * @var array<int, string>
 	 */
 	public $files = [];
+	
 }
